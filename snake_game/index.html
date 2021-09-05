@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+
+    <style>
+        canvas {
+            background-color: black;
+            border: 20px solid rgb(252, 93, 93);
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            /* margin-left: 15vw;
+            margin-right: 15vw; */
+
+        }
+
+        div {
+            width: 300px;
+            height: 50px;
+            margin: auto;
+            font-size: 4vw;
+            align-items: center;
+        }
+
+        .button {
+            width: 300px;
+            height: 50px;
+            margin: auto;
+            /* margin-left: 100px;
+            margin-right:18px; */
+            font-size: 40px;
+            background-color: rgb(49, 49, 30);
+        }
+        p {
+            background-color: rgb(240, 255, 187);
+            color: rgb(26, 15, 15);
+            font-weight: bold;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p><spam style="font-size: x-large;color: rgb(243, 0, 0);"><b>Rules of the game</b></spam><br>
+        . The snake moves only north, south, east, or west.<br>
+        . Food appear at random locations.The final score is based on the food eaten by the snake.<br>
+    . When the snake eats food, it gets longer.
+    The game continues until the snake dies. A snake dies by running into the edge of the board.</p>
+
+        <canvas id="canvas" height="500px" width="900px"></canvas>
+        <br>
+        <div style="background-color:white;">
+            <button type="button" class="button" style="color: gold;" onClick="window.location.reload();">Start
+                Again</button>
+        </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
